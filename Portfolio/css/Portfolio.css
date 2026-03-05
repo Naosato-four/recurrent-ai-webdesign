@@ -160,4 +160,72 @@ main {
       }
     }
   }
+  /* ヒストリーセクションの設定 */
+  section#history {
+    margin-bottom: 160px;
+    div.icon-group {
+      display: flex;
+      justify-content: center;
+      gap: 64px;
+      width: 1440px;
+      article {
+        width: 300px;
+        figure {
+          margin-bottom: 16px;
+          img {
+            margin-bottom: 24px;
+          }
+          figcaption {
+            font-size: var(--Portfolio-24);
+            font-weight: var(--Portfolio-Bold);
+          }
+        }
+        p {
+          font-size: var(--Portfolio-14);
+        }
+      }
+    }
+  }
+  /* ライクセクションの設定 */
+  section#like {
+    width: 1028px;
+    margin-inline: auto;
+    margin-bottom: 160px;
+    ul {
+      display: grid;
+      /* 繰り返す場合はrepeat(繰り返す回数,幅)を使用*/
+      grid-template-columns: repeat(3, 1fr);
+      gap: 64px;
+      margin-bottom: 80px;
+      li {
+        text-align: left;
+        figure,
+        h4,
+        p {
+          margin-bottom: 24px;
+        }
+        h4 {
+          font-weight: var(--Portfolio-Bold);
+        }
+        div.tag-container {
+          .tag {
+            display: inline;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background-color: #eeeeee;
+          }
+        }
+      }
+    }
+    /* ボタン */
+    p {
+      a {
+        padding: 10px 48px; /* 上下 左右 */
+        border-radius: 50px; /* 角の半径 */
+        background-color: var(--Portfolio-Blue);
+        color: var(--Portfolio-white);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
 }
